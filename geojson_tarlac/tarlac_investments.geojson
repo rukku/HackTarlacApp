@@ -1,0 +1,31 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "NAME": "Don Benito", "ADDRESS": "Moncada Municipal Hall, Moncada, Tarlac", "CONTACT DE": "0916 4591 785", "CONTACT PE": "Ms. Via Bagamaspad", "PRODUCT": "Sweet Potato Wine", "ESTABLISHE": "2004", "addrtype": "city_hall", "addrlocat": "APPROXIMATE" }, "geometry": { "type": "Point", "coordinates": [ 120.572689, 15.732980 ] } }
+,
+{ "type": "Feature", "properties": { "NAME": "Wood Inspiration Crafts", "ADDRESS": "Gabay St. Pob. East, Sta. Ignacia, Tarlac", "CONTACT DE": "606 3096\/ 0917 8340 252", "CONTACT PE": "Glenn and Bles and Pascual", "PRODUCT": "Wooden Decoration", "ESTABLISHE": "Dec-02", "addrtype": "locality", "addrlocat": "APPROXIMATE" }, "geometry": { "type": "Point", "coordinates": [ 120.596349, 15.475479 ] } }
+,
+{ "type": "Feature", "properties": { "NAME": "Pascasio Pottery", "ADDRESS": "Milla St. Poblacion West, Sta. Ignacia Tarlac", "CONTACT DE": "0999 1571 020 \/ 0916 1677 708 \/  (045) 606 0642", "CONTACT PE": "Mr. and Mrs. Pascasio", "PRODUCT": "All kinds of Pot", "ESTABLISHE": "2005", "addrtype": "police", "addrlocat": "APPROXIMATE" }, "geometry": { "type": "Point", "coordinates": [ 120.435117, 15.616522 ] } }
+,
+{ "type": "Feature", "properties": { "NAME": "Cind", "ADDRESS": "Tibag Tarlac", "CONTACT DE": "(045) 491 1316", "CONTACT PE": "Ariel A. Licutan", "PRODUCT": "baked bread, halo-halo and local favorites like pancit luglog, cake and delicious product", "ESTABLISHE": "1971", "addrtype": "neighborhood", "addrlocat": "APPROXIMATE" }, "geometry": { "type": "Point", "coordinates": [ 120.570099, 15.490450 ] } }
+,
+{ "type": "Feature", "properties": { "NAME": "Jelexie", "ADDRESS": "Brgy. Sepung Calsada Tarlac", "CONTACT DE": "(045)982 2935\/ 982 5598 \/ 982 3398\/ 491 0388\/ 0917 809 7625", "CONTACT PE": "Jimmy Tan", "PRODUCT": "Cake, break, delicacies, and other delicious  palasabong", "ESTABLISHE": "", "addrtype": "locality", "addrlocat": "APPROXIMATE" }, "geometry": { "type": "Point", "coordinates": [ 120.596349, 15.475479 ] } }
+,
+{ "type": "Feature", "properties": { "NAME": "Ylang Ylang", "ADDRESS": "Municipality of Anao Tarlac", "CONTACT DE": "(045) 601 0512", "CONTACT PE": "Joey Astrero", "PRODUCT": "Ylang2x Perfume and Ylang2x Essential Oil", "ESTABLISHE": "1989", "addrtype": "city_hall", "addrlocat": "APPROXIMATE" }, "geometry": { "type": "Point", "coordinates": [ 120.378174, 15.618863 ] } }
+,
+{ "type": "Feature", "properties": { "NAME": "Bamboo Bike", "ADDRESS": "Victoria Tarlac", "CONTACT DE": "", "CONTACT PE": "", "PRODUCT": "Bike made of Bamboo", "ESTABLISHE": "2011", "addrtype": "locality", "addrlocat": "APPROXIMATE" }, "geometry": { "type": "Point", "coordinates": [ 120.681944, 15.578056 ] } }
+,
+{ "type": "Feature", "properties": { "NAME": "PHEPS DODGE", "ADDRESS": "Luisita Central Park Tarlac City", "CONTACT DE": "(045)985-1088\/ 985-1090", "CONTACT PE": "Rogelio S.Lim (Operation Manager)", "PRODUCT": "Wire and Cable product", "ESTABLISHE": "", "addrtype": "locality", "addrlocat": "APPROXIMATE" }, "geometry": { "type": "Point", "coordinates": [ 120.596349, 15.475479 ] } }
+,
+{ "type": "Feature", "properties": { "NAME": "Corn Husk", "ADDRESS": "Pura Tarlac", "CONTACT DE": "(045)606-0243", "CONTACT PE": "Madam Adora", "PRODUCT": "Flower Decor", "ESTABLISHE": "2008", "addrtype": "locality", "addrlocat": "APPROXIMATE" }, "geometry": { "type": "Point", "coordinates": [ 120.650000, 15.625000 ] } }
+,
+{ "type": "Feature", "properties": { "NAME": "On Semiconductor", "ADDRESS": "Luisita Central San Miguel Tarlac", "CONTACT DE": "", "CONTACT PE": "Ms. Janet Dulawan (ER Officer)", "PRODUCT": "All kind of micro chips", "ESTABLISHE": "", "addrtype": "locality", "addrlocat": "APPROXIMATE" }, "geometry": { "type": "Point", "coordinates": [ 120.596349, 15.475479 ] } }
+,
+{ "type": "Feature", "properties": { "NAME": "D' Luxe Bags", "ADDRESS": "Sta. Rosa Road Concepcion Tarlac", "CONTACT DE": "(045) 491-7436", "CONTACT PE": "", "PRODUCT": "Branded Coach bag", "ESTABLISHE": "16-Jan-12", "addrtype": "locality", "addrlocat": "APPROXIMATE" }, "geometry": { "type": "Point", "coordinates": [ 120.596349, 15.475479 ] } }
+,
+{ "type": "Feature", "properties": { "NAME": "Lapaz Primefoods", "ADDRESS": "Lapas Tarlac City", "CONTACT DE": "0922 835 3595\/ 0922 864 8192", "CONTACT PE": "Virgin Mary A. Nicolas", "PRODUCT": "Meat  frozen products like:", "ESTABLISHE": "", "addrtype": "locality", "addrlocat": "APPROXIMATE" }, "geometry": { "type": "Point", "coordinates": [ 120.728889, 15.443056 ] } }
+,
+{ "type": "Feature", "properties": { "NAME": "Betty's", "ADDRESS": "San Roque Tarlac City", "CONTACT DE": "", "CONTACT PE": "", "PRODUCT": "kakanin", "ESTABLISHE": "1972", "addrtype": "neighborhood", "addrlocat": "APPROXIMATE" }, "geometry": { "type": "Point", "coordinates": [ 120.733558, 15.441636 ] } }
+
+]
+}

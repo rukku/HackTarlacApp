@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "osm_id": "557566352", "timestamp": "2010-02-15T11:37:25Z", "name": "Guevara Station", "type": "bus_station" }, "geometry": { "type": "Point", "coordinates": [ 120.716639, 15.474936 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1423604296", "timestamp": "2012-03-29T13:47:07Z", "name": "Public Bus Station", "type": "bus_station" }, "geometry": { "type": "Point", "coordinates": [ 120.412581, 15.686665 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1645210127", "timestamp": "2012-02-24T06:08:19Z", "name": "Balaoang Tricycle Terminal", "type": "bus_station" }, "geometry": { "type": "Point", "coordinates": [ 120.511613, 15.664978 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1669070931", "timestamp": "2012-03-10T19:11:56Z", "name": "Victory Liner", "type": "bus_station" }, "geometry": { "type": "Point", "coordinates": [ 120.595753, 15.400352 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1679803563", "timestamp": "2012-03-18T13:48:45Z", "name": "Baliwag Transit", "type": "bus_station" }, "geometry": { "type": "Point", "coordinates": [ 120.708485, 15.452445 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1679814204", "timestamp": "2012-03-18T13:53:31Z", "name": "E.S. Transport", "type": "bus_station" }, "geometry": { "type": "Point", "coordinates": [ 120.712361, 15.449990 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1679845626", "timestamp": "2012-03-18T14:05:43Z", "name": "Five Star Bus Stop", "type": "bus_station" }, "geometry": { "type": "Point", "coordinates": [ 120.719222, 15.446361 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "2544296670", "timestamp": "2013-11-22T01:07:52Z", "name": "Victory Bus Terminal", "type": "bus_station" }, "geometry": { "type": "Point", "coordinates": [ 120.595950, 15.479832 ] } }
+
+]
+}
