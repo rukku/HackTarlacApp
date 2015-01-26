@@ -1,0 +1,41 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "osm_id": "384232954", "timestamp": "2011-08-03T00:48:42Z", "name": "Max's Restaurant Luisita", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.598730, 15.432260 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "438032542", "timestamp": "2012-10-10T13:52:48Z", "name": "Chow King", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.585664, 15.671550 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "438032546", "timestamp": "2012-05-28T13:45:16Z", "name": "Hon Kee Tea House", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.596441, 15.475664 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "675726647", "timestamp": "2011-09-19T17:37:40Z", "name": "Isdaan Gerona", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.609766, 15.593350 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "678200315", "timestamp": "2012-06-19T07:58:41Z", "name": "Picknic", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.604400, 15.608684 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "678205136", "timestamp": "2010-03-30T01:50:20Z", "name": "Fiesta-han", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.578632, 15.709991 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "864255710", "timestamp": "2012-04-21T02:15:47Z", "name": "Cindy's Restaurant", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.590881, 15.490260 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1228991801", "timestamp": "2012-04-21T15:23:09Z", "name": "Siesta Restaurant", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.594871, 15.480967 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1666752064", "timestamp": "2012-03-09T02:20:50Z", "name": "Chowking Capas", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.593541, 15.341162 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1669032966", "timestamp": "2012-03-10T18:47:16Z", "name": "", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.593419, 15.349799 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1669044086", "timestamp": "2012-03-10T18:55:07Z", "name": "JCE Restaurant", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.591278, 15.360578 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1669917367", "timestamp": "2012-03-11T09:46:31Z", "name": "Rustica", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.606137, 15.343586 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1679237705", "timestamp": "2012-10-17T14:54:45Z", "name": "Bahay Kubo Food Hauz", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.712465, 15.450072 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1679804986", "timestamp": "2012-03-18T13:49:16Z", "name": "", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.708579, 15.452529 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1679843577", "timestamp": "2012-03-18T14:04:54Z", "name": "Park & Grill Restaurant", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.719305, 15.446485 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1702496389", "timestamp": "2013-01-04T01:45:32Z", "name": "PDC Spa Town", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.431005, 15.328889 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1724835775", "timestamp": "2012-04-21T02:17:49Z", "name": "Jolli Bee", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.589942, 15.489383 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1791639027", "timestamp": "2012-06-17T13:36:46Z", "name": "Huat Chan Tea house", "type": "restaurant" }, "geometry": { "type": "Point", "coordinates": [ 120.595542, 15.484484 ] } }
+
+]
+}

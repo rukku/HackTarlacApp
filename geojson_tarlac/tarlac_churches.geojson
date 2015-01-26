@@ -1,0 +1,25 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "osm_id": "675698618", "timestamp": "2010-03-27T12:01:40Z", "name": "Locale of Paraiso", "type": "place_of_worship" }, "geometry": { "type": "Point", "coordinates": [ 120.597991, 15.445662 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "675701740", "timestamp": "2012-04-21T16:01:12Z", "name": "Saint Raphael the Archangel Parish", "type": "place_of_worship" }, "geometry": { "type": "Point", "coordinates": [ 120.598259, 15.461409 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "678204211", "timestamp": "2010-03-30T01:49:20Z", "name": "Locale of San Isidro", "type": "place_of_worship" }, "geometry": { "type": "Point", "coordinates": [ 120.581786, 15.697400 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "678208590", "timestamp": "2012-08-21T15:21:36Z", "name": "Iglesia Ni Cristo", "type": "place_of_worship" }, "geometry": { "type": "Point", "coordinates": [ 120.571078, 15.728272 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "678210426", "timestamp": "2011-05-03T04:11:15Z", "name": "Iglesia Ni Cristo", "type": "place_of_worship" }, "geometry": { "type": "Point", "coordinates": [ 120.576946, 15.745956 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "864242810", "timestamp": "2011-04-17T15:20:27Z", "name": "Tarlac Cathedral", "type": "place_of_worship" }, "geometry": { "type": "Point", "coordinates": [ 120.588372, 15.487619 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1228961797", "timestamp": "2011-04-02T17:49:38Z", "name": "San Lorenzo Ruiz", "type": "place_of_worship" }, "geometry": { "type": "Point", "coordinates": [ 120.588136, 15.471726 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1228987991", "timestamp": "2012-04-20T23:47:37Z", "name": "Iglesia ni Kristo", "type": "place_of_worship" }, "geometry": { "type": "Point", "coordinates": [ 120.590683, 15.484647 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1254805341", "timestamp": "2012-03-30T16:37:11Z", "name": "Chapel of the Philippine Indepenent Church", "type": "place_of_worship" }, "geometry": { "type": "Point", "coordinates": [ 120.602457, 15.720867 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1679836197", "timestamp": "2012-05-21T08:24:41Z", "name": "San Antonio de Padua Chapel", "type": "place_of_worship" }, "geometry": { "type": "Point", "coordinates": [ 120.717203, 15.447120 ] } }
+
+]
+}

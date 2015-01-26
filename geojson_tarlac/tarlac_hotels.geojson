@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "osm_id": "1231219160", "timestamp": "2011-04-03T18:04:35Z", "name": "Microtel Hotel", "type": "hotel" }, "geometry": { "type": "Point", "coordinates": [ 120.601994, 15.436421 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1231222748", "timestamp": "2011-04-03T18:10:37Z", "name": "Central Park Hotel", "type": "hotel" }, "geometry": { "type": "Point", "coordinates": [ 120.606671, 15.442544 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1669032722", "timestamp": "2012-03-10T18:46:59Z", "name": "", "type": "hotel" }, "geometry": { "type": "Point", "coordinates": [ 120.593398, 15.349970 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1725526415", "timestamp": "2013-09-16T13:04:53Z", "name": "L Square Hotel", "type": "hotel" }, "geometry": { "type": "Point", "coordinates": [ 120.599000, 15.458420 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1791634628", "timestamp": "2012-06-17T13:32:38Z", "name": "Hotel Sogo", "type": "hotel" }, "geometry": { "type": "Point", "coordinates": [ 120.596536, 15.474838 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1791653960", "timestamp": "2012-06-17T13:55:32Z", "name": "Sun Garden Hotel", "type": "hotel" }, "geometry": { "type": "Point", "coordinates": [ 120.596358, 15.485888 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1791764077", "timestamp": "2012-06-17T14:52:55Z", "name": "Kristal Valley Hotel & Resort", "type": "hotel" }, "geometry": { "type": "Point", "coordinates": [ 120.600540, 15.610658 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1794093596", "timestamp": "2012-06-19T07:58:40Z", "name": "Nick Hotel", "type": "hotel" }, "geometry": { "type": "Point", "coordinates": [ 120.604435, 15.608605 ] } }
+
+]
+}

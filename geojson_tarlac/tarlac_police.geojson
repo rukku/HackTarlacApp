@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "osm_id": "1669027771", "timestamp": "2015-01-06T10:22:59Z", "name": "", "type": "police" }, "geometry": { "type": "Point", "coordinates": [ 120.593010, 15.346787 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "1676805947", "timestamp": "2015-01-06T10:22:59Z", "name": "", "type": "police" }, "geometry": { "type": "Point", "coordinates": [ 120.570761, 15.290022 ] } }
+,
+{ "type": "Feature", "properties": { "osm_id": "2094484284", "timestamp": "2015-01-06T10:22:46Z", "name": "Patling Police Station", "type": "police" }, "geometry": { "type": "Point", "coordinates": [ 120.469039, 15.360152 ] } }
+
+]
+}
