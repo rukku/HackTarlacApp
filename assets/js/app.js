@@ -59,7 +59,18 @@ function clearHighlight() {
 
 function sidebarClick(id) {
   var layer = markerClusters.getLayer(id);
-  map.setView([layer.getLatLng().lat, layer.getLatLng().lng], 17);
+
+  var type = layer.feature.geometry.type;
+
+  if(type === "Point"){
+    //For Point
+    map.setView([layer.getLatLng().lat, layer.getLatLng().lng], 17);
+  }else if (type === "MultiLineString"){
+    //for MultiLineString
+    map.setView([layer.getBounds().getCenter().lat, layer.getBounds().getCenter().lng], 15);  
+  }
+
+
   layer.fire("click");
   /* Hide sidebar and go to the map on small screens */
   if (document.body.clientWidth <= 767) {
@@ -128,6 +139,17 @@ function syncSidebar() {
         $("#feature-list tbody").append('<tr class="feature-row" id="' + L.stamp(layer) + '" lat="' + layer.getLatLng().lat + '" lng="' + layer.getLatLng().lng + '"><td style="vertical-align: middle;"><img width="16" height="18" src="assets/img/Restaurant.png"></td><td class="feature-name">' + layer.feature.properties.name + '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
       }
     }
+
+  });
+
+/* Loop through Restaurant layer and add only features which are in the map bounds */
+  Trails.eachLayer(function (layer) {
+    if (map.hasLayer(TrailLayer)) {
+      if (map.getBounds().contains(layer.getBounds().getCenter())) {
+        $("#feature-list tbody").append('<tr class="feature-row" id="' + L.stamp(layer) + '" lat="' + layer.getBounds().getCenter().lat + '" lng="' + layer.getBounds().getCenter().lng + '"><td style="vertical-align: middle;"><img width="16" height="18" src="assets/img/eco.png"></td><td class="feature-name">' + layer.feature.properties.group + '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
+      }
+    }
+
   });
 
 
@@ -192,7 +214,17 @@ $.getJSON("geojson_tarlac/tarlac_muni_boundaries.geojson", function (data) {
   Boundaries.addData(data);
 });
 
-var trailLines = L.geoJson(null, {
+
+/* Single marker cluster layer to hold all clusters */
+var markerClusters = new L.MarkerClusterGroup({
+  spiderfyOnMaxZoom: true,
+  showCoverageOnHover: false,
+  zoomToBoundsOnClick: true,
+  disableClusteringAtZoom: 16
+});
+
+var TrailLayer = L.geoJson(null);
+var Trails = L.geoJson(null, {
   style: function (feature) {
     if (feature.properties.route_id === "0") {
       return {
@@ -279,30 +311,53 @@ var trailLines = L.geoJson(null, {
       };
     }
   },
+   pointToLayer: function (feature, latlng) {
+    return L.marker([layer.getBounds().getCenter().lat, layer.getBounds().getCenter().lng], {
+      icon: L.icon({
+        iconUrl: "assets/img/eco.png",
+        iconSize: [24, 28],
+        iconAnchor: [12, 28],
+        popupAnchor: [0, -25]
+      }),
+      title: feature.properties.group,
+      riseOnHover: true
+    });
+  },
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
       var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th>Trail Name</th><td>" + feature.properties.group + "</td></tr>" + "<tr><th>Distance</th><td>" + feature.properties.length + "</td></tr>" + "<table>";
-      layer.on({
-        click: function (e) {
-          $("#feature-title").html(feature.properties.group);
-          $("#feature-info").html(content);
-          $("#featureModal").modal("show");
+        layer.on({
+          click: function (e) {
+            $("#feature-title").html(feature.properties.group);
+            $("#feature-info").html(content);
+            $("#featureModal").modal("show");
+            
+            var centerIndex = Math.floor(layer.feature.geometry.coordinates[0].length / 2);
 
-        }
+            console.log(centerIndex);
+
+            highlight.clearLayers().addLayer(L.circleMarker([layer.feature.geometry.coordinates[0][centerIndex][1],layer.feature.geometry.coordinates[0][centerIndex][0]], highlightStyle));
+
+          }
+        });
+      $("#feature-list tbody").append('<tr class="feature-row" id="' + L.stamp(layer) + '" lat="' + layer.getBounds().getCenter().lat + '" lng="' + layer.getBounds().getCenter().lng + '"><td style="vertical-align: middle;"><img width="16" height="18" src="assets/img/eco.png"></td><td class="feature-name">' + layer.feature.properties.group + '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
+           
+          var centerIndex = Math.floor(layer.feature.geometry.coordinates[0].length / 2);
+
+
+           Trailssearch.push({
+              name: layer.feature.properties.group,
+              address: layer.feature.properties.length,
+              source: "Trails",
+              id: L.stamp(layer),
+              lat: layer.feature.geometry.coordinates[0][centerIndex][1],
+              lng: layer.feature.geometry.coordinates[0][centerIndex][0]
       });
     }
   }
 });
 $.getJSON("geojson_tarlac/tarlac_trails_wgs84.geojson", function (data) {
-  trailLines.addData(data);
-});
-
-/* Single marker cluster layer to hold all clusters */
-var markerClusters = new L.MarkerClusterGroup({
-  spiderfyOnMaxZoom: true,
-  showCoverageOnHover: false,
-  zoomToBoundsOnClick: true,
-  disableClusteringAtZoom: 16
+  Trails.addData(data);
 });
 
 /* Empty layer placeholder to add to layer control for listening when to add/remove Investments to markerClusters layer */
@@ -345,6 +400,7 @@ var Buses = L.geoJson(null, {
 });
 $.getJSON("geojson_tarlac/tarlac_bus.geojson", function (data) {
   Buses.addData(data);
+  map.addLayer(BusLayer);
 });
 
 
@@ -641,6 +697,10 @@ map.on("overlayadd", function(e) {
     markerClusters.addLayer(Restaurants);
     syncSidebar();
   }
+  if (e.layer === TrailLayer) {
+    markerClusters.addLayer(Trails);
+    syncSidebar();
+  }
 });
 
 map.on("overlayremove", function(e) {
@@ -668,8 +728,12 @@ map.on("overlayremove", function(e) {
     markerClusters.removeLayer(Polices);
     syncSidebar();
   }
-if (e.layer === RestaurantLayer) {
+  if (e.layer === RestaurantLayer) {
     markerClusters.removeLayer(Restaurants);
+    syncSidebar();
+  }
+  if (e.layer === TrailLayer) {
+    markerClusters.removeLayer(Trails);
     syncSidebar();
   }
 });
@@ -756,6 +820,7 @@ var baseLayers = {
 
 var groupedOverlays = {
   "Points of Interest": {
+    "<img src='assets/img/eco.png' width='24' height='28'>&nbsp;Eco Trail": TrailLayer,
     "<img src='assets/img/Bus.png' width='24' height='28'>&nbsp;Bus Terminals": BusLayer,
     "<img src='assets/img/Hotel.png' width='24' height='28'>&nbsp;Hotels": HotelLayer,
     "<img src='assets/img/Restaurant.png' width='24' height='28'>&nbsp;Restaurants": RestaurantLayer,
@@ -763,13 +828,9 @@ var groupedOverlays = {
     "<img src='assets/img/Church.png' width='24' height='28'>&nbsp;Churches": ChurchLayer,
     "<img src='assets/img/hospital.png' width='24' height='28'>&nbsp;Hospitals": hospitalLayer,
     "<img src='assets/img/Investment.png' width='24' height='28'>&nbsp;Investments": InvestmentLayer
-    
-
- 
   },
   "Reference": {
-    "Boundaries": Boundaries,
-    "Trails": trailLines,
+    "Boundaries": Boundaries
   }
 };
 
@@ -881,6 +942,16 @@ $(document).one("ajaxStop", function () {
     limit: 10
   });
 
+  var TrailBH = new Bloodhound({
+    name: "Trails",
+    datumTokenizer: function (d) {
+      return Bloodhound.tokenizers.whitespace(d.name);
+    },
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    local: Trailssearch,
+    limit: 10
+  });
+
   var geonamesBH = new Bloodhound({
     name: "GeoNames",
     datumTokenizer: function (d) {
@@ -919,6 +990,7 @@ $(document).one("ajaxStop", function () {
   ChurchesBH.initialize();
   PoliceBH.initialize();
   RestaurantBH.initialize();
+  TrailBH.initialize();
   geonamesBH.initialize();
 
   /* instantiate the typeahead UI */
@@ -987,6 +1059,14 @@ $(document).one("ajaxStop", function () {
     source: RestaurantBH.ttAdapter(),
     templates: {
       header: "<h4 class='typeahead-header'><img src='assets/img/Restaurant.png' width='24' height='28'>&nbsp;Restaurants</h4>",
+      suggestion: Handlebars.compile(["{{name}}<br>&nbsp;<small>{{address}}</small>"].join(""))
+    }
+  },{
+    name: "Trails",
+    displayKey: "name",
+    source: TrailBH.ttAdapter(),
+    templates: {
+      header: "<h4 class='typeahead-header'><img src='assets/img/eco.png' width='24' height='28'>&nbsp;Trails</h4>",
       suggestion: Handlebars.compile(["{{name}}<br>&nbsp;<small>{{address}}</small>"].join(""))
     }
   },{
@@ -1059,6 +1139,15 @@ $(document).one("ajaxStop", function () {
         map.addLayer(PoliceLayer);
       }
       map.setView([datum.lat, datum.lng], 17);
+      if (map._layers[datum.id]) {
+        map._layers[datum.id].fire("click");
+      }
+    }
+    if (datum.source === "Trails") {
+      if (!map.hasLayer(TrailLayer)) {
+        map.addLayer(TrailLayer);
+      }
+      map.setView([datum.lat, datum.lng], 15);
       if (map._layers[datum.id]) {
         map._layers[datum.id].fire("click");
       }
