@@ -487,7 +487,7 @@ var layerControl = L.control.groupedLayers(baseLayers, groupedOverlays, {
             var el = L.control.elevation({position: "bottomleft"});
             el.addTo(map);
 
-            var g=new L.GPX("data/bungkol.2.gpx", {
+            var g=new L.GPX("data/trails_with_elevation.gpx", {
               async: true,
               marker_options: {
                   startIconUrl: 'assets/leaflet-gpx/pin-icon-start.png',
