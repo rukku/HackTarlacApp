@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<gpx creator="GPS Visualizer http://www.gpsvisualizer.com/" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+  <name>trailsgpx 1</name>
+  <trkseg>
+    <trkpt lat="15.43953333" lon="120.4215972">
+      <ele>161.24</ele>
+    </trkpt>
+    <trkpt lat="15.43860278" lon="120.4213028">
+      <ele>143.118</ele>
+    </trkpt>
+    <trkpt lat="15.43792222" lon="120.4208">
+      <ele>136.213</ele>
+    </trkpt>
+    <trkpt lat="15.437175" lon="120.4211278">
+      <ele>129.559</ele>
+    </trkpt>
+    <trkpt lat="15.43655" lon="120.42145">
+      <ele>125.411</ele>
+    </trkpt>
+    <trkpt lat="15.43593056" lon="120.4217806">
+      <ele>126.262</ele>
+    </trkpt>
+    <trkpt lat="15.43524444" lon="120.4215333">
+      <ele>125.32</ele>
+    </trkpt>
+    <trkpt lat="15.43440278" lon="120.4218972">
+      <ele>132.049</ele>
+    </trkpt>
+    <trkpt lat="15.43358889" lon="120.4219722">
+      <ele>135.359</ele>
+    </trkpt>
+    <trkpt lat="15.43276944" lon="120.4223806">
+      <ele>139.619</ele>
+    </trkpt>
+    <trkpt lat="15.43190833" lon="120.4225972">
+      <ele>145.655</ele>
+    </trkpt>
+    <trkpt lat="15.43100556" lon="120.4228028">
+      <ele>151.448</ele>
+    </trkpt>
+    <trkpt lat="15.43015833" lon="120.4225361">
+      <ele>153.998</ele>
+    </trkpt>
+    <trkpt lat="15.42988611" lon="120.4216778">
+      <ele>163.33</ele>
+    </trkpt>
+    <trkpt lat="15.42961944" lon="120.4212944">
+      <ele>168.612</ele>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>

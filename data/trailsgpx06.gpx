@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<gpx creator="GPS Visualizer http://www.gpsvisualizer.com/" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+  <name>trailsgpx 6</name>
+  <trkseg>
+    <trkpt lat="15.44195833" lon="120.4237306">
+      <ele>185.544</ele>
+    </trkpt>
+    <trkpt lat="15.44107778" lon="120.42335">
+      <ele>178.469</ele>
+    </trkpt>
+    <trkpt lat="15.44048333" lon="120.4226222">
+      <ele>176.928</ele>
+    </trkpt>
+    <trkpt lat="15.43972222" lon="120.4220667">
+      <ele>161.386</ele>
+    </trkpt>
+    <trkpt lat="15.43971944" lon="120.421225">
+      <ele>162.374</ele>
+    </trkpt>
+    <trkpt lat="15.43918889" lon="120.4207139">
+      <ele>153.058</ele>
+    </trkpt>
+    <trkpt lat="15.43855556" lon="120.4200972">
+      <ele>146.557</ele>
+    </trkpt>
+    <trkpt lat="15.43815" lon="120.4192833">
+      <ele>138.119</ele>
+    </trkpt>
+    <trkpt lat="15.43796667" lon="120.4183361">
+      <ele>124.688</ele>
+    </trkpt>
+    <trkpt lat="15.43755556" lon="120.4174556">
+      <ele>124.222</ele>
+    </trkpt>
+    <trkpt lat="15.43715833" lon="120.4165972">
+      <ele>120.16</ele>
+    </trkpt>
+    <trkpt lat="15.43653056" lon="120.4159">
+      <ele>118.051</ele>
+    </trkpt>
+    <trkpt lat="15.43624444" lon="120.41505">
+      <ele>119.875</ele>
+    </trkpt>
+    <trkpt lat="15.43613889" lon="120.4140778">
+      <ele>118.373</ele>
+    </trkpt>
+    <trkpt lat="15.43591667" lon="120.4131389">
+      <ele>120.57</ele>
+    </trkpt>
+    <trkpt lat="15.43608056" lon="120.4122528">
+      <ele>122.11</ele>
+    </trkpt>
+    <trkpt lat="15.43702222" lon="120.4122972">
+      <ele>123.995</ele>
+    </trkpt>
+    <trkpt lat="15.43798333" lon="120.4123361">
+      <ele>124.454</ele>
+    </trkpt>
+    <trkpt lat="15.43898333" lon="120.4124833">
+      <ele>124.677</ele>
+    </trkpt>
+    <trkpt lat="15.44015833" lon="120.4127028">
+      <ele>120.437</ele>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>

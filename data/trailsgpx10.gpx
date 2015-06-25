@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<gpx creator="GPS Visualizer http://www.gpsvisualizer.com/" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+  <name>trailsgpx 10</name>
+  <trkseg>
+    <trkpt lat="15.4152" lon="120.4045944">
+      <ele>191.199</ele>
+    </trkpt>
+    <trkpt lat="15.41441667" lon="120.4050417">
+      <ele>199.641</ele>
+    </trkpt>
+    <trkpt lat="15.41364444" lon="120.405475">
+      <ele>221.895</ele>
+    </trkpt>
+    <trkpt lat="15.41293611" lon="120.4060083">
+      <ele>236.552</ele>
+    </trkpt>
+    <trkpt lat="15.41210278" lon="120.40685">
+      <ele>252.067</ele>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>
